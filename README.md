@@ -185,4 +185,4 @@ npm run make
 
 ## 라이선스
 
-아직 라이선스를 정하지 않은 `UNLICENSED` 프로젝트입니다.
+[MIT License](LICENSE)로 배포합니다.

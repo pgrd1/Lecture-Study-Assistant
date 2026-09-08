@@ -5,7 +5,7 @@
   "description": "Local-first lecture intake and Obsidian study workflow for Windows.",
   "main": ".vite/build/main.js",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "packageManager": "npm@11.16.0",
   "scripts": {
     "start": "electron-forge start",
