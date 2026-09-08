@@ -1,0 +1,7 @@
+{
+  "jobId": "22222222-2222-4222-8222-222222222222",
+  "status": "failed",
+  "displayMessage": "iCloud 대기열 항목 형식을 확인해 주세요.",
+  "updatedAt": "2026-09-01T00:00:00.000Z",
+  "errorCode": "INVALID_QUEUE_ITEM"
+}

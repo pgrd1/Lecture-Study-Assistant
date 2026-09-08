@@ -1,0 +1,58 @@
+{
+  "wav": {
+    "sizeBytes": 16044,
+    "sha256": "56d4af65701c26df20bd4021eda95b6e830348ce3a746086079fe89285548dc9"
+  },
+  "m4a": {
+    "sizeBytes": 496,
+    "sha256": "023dbc7c4a96f0e7fe38331f45a6ab93f57947ba484ba0fcfbd0a0cf01e41440"
+  },
+  "pdf1": {
+    "sizeBytes": 357,
+    "sha256": "4cfbf3653c9e65f8a481cc8466064853fbc4e7ad714d6fb6838be5072e246be9"
+  },
+  "pdf10": {
+    "sizeBytes": 1492,
+    "sha256": "f0020a51ae335ea29208351f82a5c637823abe328f64f6d0f90ace9d0ab49442"
+  },
+  "png": {
+    "sizeBytes": 68,
+    "sha256": "b50a6b8fa84df8fe9bc73b74b6d62e3848fe1eb61c2502f4423c51af9c6dfb25"
+  },
+  "pptx": {
+    "sizeBytes": 2495,
+    "sha256": "7f2a753349ace18c4506fba21f5863730897f812c2020e26905a8ca9ee216eff"
+  },
+  "jpeg1": {
+    "sizeBytes": 310,
+    "sha256": "3c44b50847d7708f4cbd1f5d5292f0d7b435d6a48b34cbcf1f683f15c4f9ab7d"
+  },
+  "jpeg2": {
+    "sizeBytes": 310,
+    "sha256": "92980c8c15968a0746e53ea56288ac9e52f167388b4a652978dc00e3e653d64d"
+  },
+  "jpeg3": {
+    "sizeBytes": 310,
+    "sha256": "5bfe15c35332135559e2a8cda0b84c422ebd6c16c43d04c7c4d2bab3d213ae27"
+  },
+  "jpeg4": {
+    "sizeBytes": 310,
+    "sha256": "d7156bb14a98a60aca3823893e97f464d0d7703367ce77e3d862a2c06de1be97"
+  },
+  "jpeg5": {
+    "sizeBytes": 310,
+    "sha256": "16c5d739648964f57ccc245de750a1e383aec3a6e2300e354e3a38c382725f89"
+  },
+  "jpeg6": {
+    "sizeBytes": 310,
+    "sha256": "7aa2b56e561031fee8d3b0d235d844079d6ad0059dc951307251970bf22c1946"
+  },
+  "jpeg7": {
+    "sizeBytes": 310,
+    "sha256": "be2ce24b6b3a46e6bdd3338febf45a01eec5c5d18ceb26f5a8171b032a17c311"
+  },
+  "jpeg8": {
+    "sizeBytes": 310,
+    "sha256": "f2b5e91e14c1ce11581528681ba5a37c5dc4a534640f5bcfccfc532285cebbcd"
+  }
+}

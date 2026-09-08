@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "readOnly": true,
+  "type": "object",
+  "properties": {
+    "protocolVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "jobId": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+    },
+    "courseId": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+    },
+    "source": {
+      "readOnly": true,
+      "oneOf": [
+        {
+          "readOnly": true,
+          "type": "object",
+          "properties": {
+            "fileName": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180,
+              "pattern": "^(?![.]{1,2}$)(?!(?:[cC][oO][nN]|[pP][rR][nN]|[aA][uU][xX]|[nN][uU][lL]|[cC][oO][mM][1-9¹²³]|[lL][pP][tT][1-9¹²³]|[cC][oO][nN][iI][nN]\\$|[cC][oO][nN][oO][uU][tT]\\$)[ ]*(?:[.]|$))(?!.*[<>:\"/\\\\|?*\\u0000-\\u001F\\u007F-\\u009F])(?=.{1,180}$)(?=.*[^.\\s].*[.](?:[mM]4[aA]|[mM][pP]3|[wW][aA][vV]|[aA][aA][cC]|[fF][lL][aA][cC])$).+$"
+            },
+            "mediaType": {
+              "type": "string",
+              "const": "audio"
+            }
+          },
+          "required": ["fileName", "mediaType"],
+          "additionalProperties": false
+        },
+        {
+          "readOnly": true,
+          "type": "object",
+          "properties": {
+            "fileName": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180,
+              "pattern": "^(?![.]{1,2}$)(?!(?:[cC][oO][nN]|[pP][rR][nN]|[aA][uU][xX]|[nN][uU][lL]|[cC][oO][mM][1-9¹²³]|[lL][pP][tT][1-9¹²³]|[cC][oO][nN][iI][nN]\\$|[cC][oO][nN][oO][uU][tT]\\$)[ ]*(?:[.]|$))(?!.*[<>:\"/\\\\|?*\\u0000-\\u001F\\u007F-\\u009F])(?=.{1,180}$)(?=.*[^.\\s].*[.](?:[mM][pP]4)$).+$"
+            },
+            "mediaType": {
+              "type": "string",
+              "const": "video"
+            }
+          },
+          "required": ["fileName", "mediaType"],
+          "additionalProperties": false
+        },
+        {
+          "readOnly": true,
+          "type": "object",
+          "properties": {
+            "fileName": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180,
+              "pattern": "^(?![.]{1,2}$)(?!(?:[cC][oO][nN]|[pP][rR][nN]|[aA][uU][xX]|[nN][uU][lL]|[cC][oO][mM][1-9¹²³]|[lL][pP][tT][1-9¹²³]|[cC][oO][nN][iI][nN]\\$|[cC][oO][nN][oO][uU][tT]\\$)[ ]*(?:[.]|$))(?!.*[<>:\"/\\\\|?*\\u0000-\\u001F\\u007F-\\u009F])(?=.{1,180}$)(?=.*[^.\\s].*[.](?:[pP][dD][fF]|[pP][pP][tT][xX]|[tT][xX][tT]|[mM][dD])$).+$"
+            },
+            "mediaType": {
+              "type": "string",
+              "const": "document"
+            }
+          },
+          "required": ["fileName", "mediaType"],
+          "additionalProperties": false
+        },
+        {
+          "readOnly": true,
+          "type": "object",
+          "properties": {
+            "fileName": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180,
+              "pattern": "^(?![.]{1,2}$)(?!(?:[cC][oO][nN]|[pP][rR][nN]|[aA][uU][xX]|[nN][uU][lL]|[cC][oO][mM][1-9¹²³]|[lL][pP][tT][1-9¹²³]|[cC][oO][nN][iI][nN]\\$|[cC][oO][nN][oO][uU][tT]\\$)[ ]*(?:[.]|$))(?!.*[<>:\"/\\\\|?*\\u0000-\\u001F\\u007F-\\u009F])(?=.{1,180}$)(?=.*[^.\\s].*[.](?:[pP][nN][gG]|[jJ][pP][gG]|[jJ][pP][eE][gG]|[hH][eE][iI][cC])$).+$"
+            },
+            "mediaType": {
+              "type": "string",
+              "const": "image"
+            }
+          },
+          "required": ["fileName", "mediaType"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "summaryMode": {
+      "type": "string",
+      "enum": ["none", "core", "standard", "full"]
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": ["protocolVersion", "jobId", "courseId", "createdAt", "source", "summaryMode"],
+  "additionalProperties": false
+}

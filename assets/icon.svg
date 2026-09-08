@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Lecture Study Assistant">
+  <rect width="256" height="256" rx="52" fill="#17243b" />
+  <path d="M64 55h96c18 0 32 14 32 32v114H96c-18 0-32-14-32-32V55Z" fill="#f7f9fc" />
+  <path d="M96 55h96v146H96c-18 0-32-14-32-32s14-32 32-32h72" fill="none" stroke="#60a5fa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M112 92h48M112 119h48" stroke="#17243b" stroke-width="10" stroke-linecap="round" />
+</svg>

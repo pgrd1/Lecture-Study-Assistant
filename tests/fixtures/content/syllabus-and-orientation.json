@@ -1,0 +1,487 @@
+{
+  "fixtureVersion": 1,
+  "sources": [
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "fileName": "syllabus.md",
+      "text": "평가 grading: 과제 40%, 중간고사 30%, 기말고사 30%.\n주간 일정 schedule: 1주 배열 array, 2주 병합 정렬 merge sort.\n중간고사 안내 scope: 1–4장; 예정일 2026-10-19. 일정은 변경될 수 있다.",
+      "expectedLineCount": 3,
+      "classification": {
+        "sourceId": "00000000-0000-4000-8000-000000000002",
+        "types": ["syllabus"],
+        "sections": [
+          {
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 3
+            },
+            "types": ["syllabus"],
+            "confidence": 1,
+            "uncertainty": null
+          }
+        ],
+        "facts": [
+          {
+            "kind": "grading_component",
+            "text": "평가 grading: 과제 40%, 중간고사 30%, 기말고사 30%.",
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            },
+            "confidence": 1,
+            "uncertainty": null,
+            "date": null,
+            "weightPercent": 40
+          },
+          {
+            "kind": "weekly_topic",
+            "text": "주간 일정 schedule: 1주 배열 array, 2주 병합 정렬 merge sort.",
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            },
+            "confidence": 1,
+            "uncertainty": null,
+            "date": null,
+            "weightPercent": null
+          },
+          {
+            "kind": "candidate_exam_date",
+            "text": "중간고사 안내 scope: 1–4장; 예정일 2026-10-19. 일정은 변경될 수 있다.",
+            "locator": {
+              "kind": "text",
+              "startLine": 3,
+              "endLine": 3
+            },
+            "confidence": 1,
+            "uncertainty": null,
+            "date": "2026-10-19",
+            "weightPercent": null
+          },
+          {
+            "kind": "textbook_scope",
+            "text": "중간고사 범위: 1–4장",
+            "locator": {
+              "kind": "text",
+              "startLine": 3,
+              "endLine": 3
+            },
+            "confidence": 1,
+            "uncertainty": null,
+            "date": null,
+            "weightPercent": null
+          }
+        ],
+        "confidence": 1,
+        "uncertainty": null,
+        "sessionDate": "2026-09-07"
+      },
+      "extraction": {
+        "segments": [
+          {
+            "id": "00000000-0000-4000-8000-000000002001",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "kind": "explanation",
+            "text": "평가 grading: 과제 40%, 중간고사 30%, 기말고사 30%.\n주간 일정 schedule: 1주 배열 array, 2주 병합 정렬 merge sort.\n중간고사 안내 scope: 1–4장; 예정일 2026-10-19. 일정은 변경될 수 있다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 3
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          }
+        ]
+      },
+      "evidence": {
+        "segments": [
+          {
+            "id": "00000000-0000-4000-8000-000000000201",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "kind": "observation",
+            "text": "평가 grading: 과제 40%, 중간고사 30%, 기말고사 30%.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000202",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "kind": "explanation",
+            "text": "주간 일정 schedule: 1주 배열 array, 2주 병합 정렬 merge sort.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000203",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "kind": "observation",
+            "text": "중간고사 안내 scope: 1–4장; 예정일 2026-10-19. 일정은 변경될 수 있다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 3,
+              "endLine": 3
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          }
+        ]
+      }
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000003",
+      "fileName": "orientation-and-lecture.txt",
+      "text": "오리엔테이션: 교수는 merge sort의 동률 처리 과정을 직접 설명하는 연습을 강조했다.\n첫 강의: array는 인덱스로 원소를 찾는 자료구조이다.",
+      "expectedLineCount": 2,
+      "classification": {
+        "sourceId": "00000000-0000-4000-8000-000000000003",
+        "types": ["orientation", "lecture_recording"],
+        "sections": [
+          {
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            },
+            "types": ["orientation"],
+            "confidence": 1,
+            "uncertainty": null
+          },
+          {
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            },
+            "types": ["lecture_recording"],
+            "confidence": 1,
+            "uncertainty": null
+          }
+        ],
+        "facts": [],
+        "confidence": 1,
+        "uncertainty": null,
+        "sessionDate": "2026-09-07"
+      },
+      "extraction": {
+        "segments": [
+          {
+            "id": "00000000-0000-4000-8000-000000003001",
+            "sourceId": "00000000-0000-4000-8000-000000000003",
+            "kind": "explanation",
+            "text": "오리엔테이션: 교수는 merge sort의 동률 처리 과정을 직접 설명하는 연습을 강조했다.\n첫 강의: array는 인덱스로 원소를 찾는 자료구조이다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 2
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          }
+        ]
+      },
+      "evidence": {
+        "segments": [
+          {
+            "id": "00000000-0000-4000-8000-000000000301",
+            "sourceId": "00000000-0000-4000-8000-000000000003",
+            "kind": "emphasis",
+            "text": "오리엔테이션: 교수는 merge sort의 동률 처리 과정을 직접 설명하는 연습을 강조했다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000302",
+            "sourceId": "00000000-0000-4000-8000-000000000003",
+            "kind": "definition",
+            "text": "첫 강의: array는 인덱스로 원소를 찾는 자료구조이다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          }
+        ]
+      }
+    }
+  ],
+  "clustering": {
+    "contentSchemaVersion": 2,
+    "topics": [
+      {
+        "id": "00000000-0000-4000-8000-000000000103",
+        "title": "과목 운영과 학습 범위",
+        "action": "create",
+        "existingTopicId": null,
+        "evidenceIds": [
+          "00000000-0000-4000-8000-000000000201",
+          "00000000-0000-4000-8000-000000000202",
+          "00000000-0000-4000-8000-000000000203",
+          "00000000-0000-4000-8000-000000000301"
+        ],
+        "uncertainty": null,
+        "sessionDates": ["2026-09-07"]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000104",
+        "title": "배열 array",
+        "action": "create",
+        "existingTopicId": null,
+        "evidenceIds": ["00000000-0000-4000-8000-000000000302"],
+        "uncertainty": null,
+        "sessionDates": ["2026-09-07"]
+      }
+    ]
+  },
+  "synthesis": {
+    "contentSchemaVersion": 2,
+    "topics": [
+      {
+        "cluster": {
+          "id": "00000000-0000-4000-8000-000000000103",
+          "title": "과목 운영과 학습 범위",
+          "action": "create",
+          "existingTopicId": null,
+          "evidenceIds": [
+            "00000000-0000-4000-8000-000000000201",
+            "00000000-0000-4000-8000-000000000202",
+            "00000000-0000-4000-8000-000000000203",
+            "00000000-0000-4000-8000-000000000301"
+          ],
+          "uncertainty": null,
+          "sessionDates": ["2026-09-07"]
+        },
+        "contentMode": "new_topic",
+        "outline": [
+          {
+            "id": "00000000-0000-4000-8000-000000000210",
+            "text": "평가 grading: 과제 40%, 중간고사 30%, 기말고사 30%.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000201"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "explanations": [
+          {
+            "id": "00000000-0000-4000-8000-000000000211",
+            "text": "주간 일정 schedule: 1주 배열 array, 2주 병합 정렬 merge sort.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000202"],
+            "status": "source_supported",
+            "uncertainty": null
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000212",
+            "text": "중간고사 안내 scope: 1–4장; 예정일 2026-10-19. 일정은 변경될 수 있다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000203"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "definitions": [],
+        "formulas": [],
+        "examples": [],
+        "exceptions": [],
+        "misconceptions": [],
+        "professorSignals": [
+          {
+            "id": "00000000-0000-4000-8000-000000000213",
+            "text": "오리엔테이션: 교수는 merge sort의 동률 처리 과정을 직접 설명하는 연습을 강조했다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000301"],
+            "status": "source_supported",
+            "uncertainty": null,
+            "observationKind": "explicit_emphasis",
+            "inference": "observable_course_evidence"
+          }
+        ],
+        "conflicts": [],
+        "citations": [
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000201",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000202",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000203",
+            "sourceId": "00000000-0000-4000-8000-000000000002",
+            "locator": {
+              "kind": "text",
+              "startLine": 3,
+              "endLine": 3
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000301",
+            "sourceId": "00000000-0000-4000-8000-000000000003",
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            }
+          }
+        ],
+        "sessions": [
+          {
+            "date": "2026-09-07",
+            "evidenceIds": [
+              "00000000-0000-4000-8000-000000000201",
+              "00000000-0000-4000-8000-000000000202",
+              "00000000-0000-4000-8000-000000000203",
+              "00000000-0000-4000-8000-000000000301"
+            ]
+          }
+        ]
+      },
+      {
+        "cluster": {
+          "id": "00000000-0000-4000-8000-000000000104",
+          "title": "배열 array",
+          "action": "create",
+          "existingTopicId": null,
+          "evidenceIds": ["00000000-0000-4000-8000-000000000302"],
+          "uncertainty": null,
+          "sessionDates": ["2026-09-07"]
+        },
+        "contentMode": "new_topic",
+        "outline": [],
+        "explanations": [],
+        "definitions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000214",
+            "text": "첫 강의: array는 인덱스로 원소를 찾는 자료구조이다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000302"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "formulas": [],
+        "examples": [],
+        "exceptions": [],
+        "misconceptions": [],
+        "professorSignals": [],
+        "conflicts": [],
+        "citations": [
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000302",
+            "sourceId": "00000000-0000-4000-8000-000000000003",
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            }
+          }
+        ],
+        "sessions": [
+          {
+            "date": "2026-09-07",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000302"]
+          }
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "verificationSchemaVersion": 1,
+    "decisions": [
+      {
+        "itemId": "00000000-0000-4000-8000-000000000210",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000211",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000212",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000213",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000214",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      }
+    ]
+  },
+  "expected": {
+    "sourceIds": ["00000000-0000-4000-8000-000000000002", "00000000-0000-4000-8000-000000000003"],
+    "topicIds": ["00000000-0000-4000-8000-000000000103", "00000000-0000-4000-8000-000000000104"],
+    "topicTitles": ["과목 운영과 학습 범위", "배열 array"],
+    "acceptedItemIds": [
+      "00000000-0000-4000-8000-000000000210",
+      "00000000-0000-4000-8000-000000000211",
+      "00000000-0000-4000-8000-000000000212",
+      "00000000-0000-4000-8000-000000000213",
+      "00000000-0000-4000-8000-000000000214"
+    ],
+    "rejected": [],
+    "terms": [
+      "grading",
+      "40%",
+      "30%",
+      "schedule",
+      "1–4장",
+      "2026-10-19",
+      "변경될 수 있다",
+      "array",
+      "merge sort"
+    ]
+  }
+}

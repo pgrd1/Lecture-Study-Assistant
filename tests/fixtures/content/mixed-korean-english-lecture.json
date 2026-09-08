@@ -1,0 +1,583 @@
+{
+  "fixtureVersion": 1,
+  "sources": [
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "fileName": "mixed-lecture.txt",
+      "text": "시간복잡도 Time complexity는 입력 크기에 따른 연산 수의 증가를 비교한다.\n병합 정렬 merge sort는 분할 정복 divide and conquer 알고리즘이다.\n병합 정렬의 비교 연산 수 상한은 O(n log n)이다. n은 원소 개수(단위: 개), log n은 무차원이다. 비교 비용이 일정하다고 가정하며 n >= 2인 비교 기반 정렬에 적용한다.\n예: [3, 1, 2]를 병합 정렬하면 [1, 2, 3]이 된다.\n오개념: O(n log n)은 정확한 실행 시간(초)을 뜻하지 않는다.\n안정 정렬 stable sort는 동일 키 원소의 상대 순서를 보존한다.\n병합 단계에서 키가 같으면 왼쪽 원소를 먼저 선택하므로 안정성이 유지된다.\n예외: 동률에서 오른쪽 원소를 먼저 선택하는 구현은 안정성을 잃을 수 있다.\n교수는 동률 tie 처리 조건의 중요성을 명시적으로 강조했다.",
+      "expectedLineCount": 9,
+      "classification": {
+        "sourceId": "00000000-0000-4000-8000-000000000001",
+        "types": ["lecture_recording"],
+        "sections": [
+          {
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 9
+            },
+            "types": ["lecture_recording"],
+            "confidence": 1,
+            "uncertainty": null
+          }
+        ],
+        "facts": [],
+        "confidence": 1,
+        "uncertainty": null,
+        "sessionDate": "2026-09-07"
+      },
+      "extraction": {
+        "segments": [
+          {
+            "id": "00000000-0000-4000-8000-000000001001",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "explanation",
+            "text": "시간복잡도 Time complexity는 입력 크기에 따른 연산 수의 증가를 비교한다.\n병합 정렬 merge sort는 분할 정복 divide and conquer 알고리즘이다.\n병합 정렬의 비교 연산 수 상한은 O(n log n)이다. n은 원소 개수(단위: 개), log n은 무차원이다. 비교 비용이 일정하다고 가정하며 n >= 2인 비교 기반 정렬에 적용한다.\n예: [3, 1, 2]를 병합 정렬하면 [1, 2, 3]이 된다.\n오개념: O(n log n)은 정확한 실행 시간(초)을 뜻하지 않는다.\n안정 정렬 stable sort는 동일 키 원소의 상대 순서를 보존한다.\n병합 단계에서 키가 같으면 왼쪽 원소를 먼저 선택하므로 안정성이 유지된다.\n예외: 동률에서 오른쪽 원소를 먼저 선택하는 구현은 안정성을 잃을 수 있다.\n교수는 동률 tie 처리 조건의 중요성을 명시적으로 강조했다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 9
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          }
+        ]
+      },
+      "evidence": {
+        "segments": [
+          {
+            "id": "00000000-0000-4000-8000-000000000101",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "explanation",
+            "text": "시간복잡도 Time complexity는 입력 크기에 따른 연산 수의 증가를 비교한다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000102",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "definition",
+            "text": "병합 정렬 merge sort는 분할 정복 divide and conquer 알고리즘이다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000103",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "formula",
+            "text": "병합 정렬의 비교 연산 수 상한은 O(n log n)이다. n은 원소 개수(단위: 개), log n은 무차원이다. 비교 비용이 일정하다고 가정하며 n >= 2인 비교 기반 정렬에 적용한다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 3,
+              "endLine": 3
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000104",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "example",
+            "text": "예: [3, 1, 2]를 병합 정렬하면 [1, 2, 3]이 된다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 4,
+              "endLine": 4
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000105",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "explanation",
+            "text": "오개념: O(n log n)은 정확한 실행 시간(초)을 뜻하지 않는다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 5,
+              "endLine": 5
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000106",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "definition",
+            "text": "안정 정렬 stable sort는 동일 키 원소의 상대 순서를 보존한다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 6,
+              "endLine": 6
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000107",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "explanation",
+            "text": "병합 단계에서 키가 같으면 왼쪽 원소를 먼저 선택하므로 안정성이 유지된다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 7,
+              "endLine": 7
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000108",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "explanation",
+            "text": "예외: 동률에서 오른쪽 원소를 먼저 선택하는 구현은 안정성을 잃을 수 있다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 8,
+              "endLine": 8
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          },
+          {
+            "id": "00000000-0000-4000-8000-000000000109",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "kind": "emphasis",
+            "text": "교수는 동률 tie 처리 조건의 중요성을 명시적으로 강조했다.",
+            "confidence": 1,
+            "locator": {
+              "kind": "text",
+              "startLine": 9,
+              "endLine": 9
+            },
+            "language": "ko",
+            "uncertainty": null,
+            "sessionDate": "2026-09-07"
+          }
+        ]
+      }
+    }
+  ],
+  "clustering": {
+    "contentSchemaVersion": 2,
+    "topics": [
+      {
+        "id": "00000000-0000-4000-8000-000000000101",
+        "title": "시간복잡도와 merge sort",
+        "action": "create",
+        "existingTopicId": null,
+        "evidenceIds": [
+          "00000000-0000-4000-8000-000000000101",
+          "00000000-0000-4000-8000-000000000102",
+          "00000000-0000-4000-8000-000000000103",
+          "00000000-0000-4000-8000-000000000104",
+          "00000000-0000-4000-8000-000000000105"
+        ],
+        "uncertainty": null,
+        "sessionDates": ["2026-09-07"]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000102",
+        "title": "안정 정렬 stable sort",
+        "action": "create",
+        "existingTopicId": null,
+        "evidenceIds": [
+          "00000000-0000-4000-8000-000000000106",
+          "00000000-0000-4000-8000-000000000107",
+          "00000000-0000-4000-8000-000000000108",
+          "00000000-0000-4000-8000-000000000109"
+        ],
+        "uncertainty": null,
+        "sessionDates": ["2026-09-07"]
+      }
+    ]
+  },
+  "synthesis": {
+    "contentSchemaVersion": 2,
+    "topics": [
+      {
+        "cluster": {
+          "id": "00000000-0000-4000-8000-000000000101",
+          "title": "시간복잡도와 merge sort",
+          "action": "create",
+          "existingTopicId": null,
+          "evidenceIds": [
+            "00000000-0000-4000-8000-000000000101",
+            "00000000-0000-4000-8000-000000000102",
+            "00000000-0000-4000-8000-000000000103",
+            "00000000-0000-4000-8000-000000000104",
+            "00000000-0000-4000-8000-000000000105"
+          ],
+          "uncertainty": null,
+          "sessionDates": ["2026-09-07"]
+        },
+        "contentMode": "new_topic",
+        "outline": [
+          {
+            "id": "00000000-0000-4000-8000-000000000201",
+            "text": "시간복잡도 Time complexity는 입력 크기에 따른 연산 수의 증가를 비교한다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000101"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "explanations": [
+          {
+            "id": "00000000-0000-4000-8000-000000000299",
+            "text": "병합 정렬은 모든 입력에서 quicksort보다 빠르다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000103"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "definitions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000202",
+            "text": "병합 정렬 merge sort는 분할 정복 divide and conquer 알고리즘이다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000102"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "formulas": [
+          {
+            "id": "00000000-0000-4000-8000-000000000203",
+            "text": "병합 정렬의 비교 연산 수 상한은 O(n log n)이다. n은 원소 개수(단위: 개), log n은 무차원이다. 비교 비용이 일정하다고 가정하며 n >= 2인 비교 기반 정렬에 적용한다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000103"],
+            "status": "source_supported",
+            "uncertainty": null,
+            "symbols": [
+              {
+                "symbol": "n",
+                "meaning": "원소 개수",
+                "unit": "개"
+              },
+              {
+                "symbol": "log n",
+                "meaning": "입력 크기의 로그",
+                "unit": null
+              }
+            ],
+            "assumptions": ["비교 비용이 일정하다."],
+            "conditions": ["n >= 2인 비교 기반 정렬"]
+          }
+        ],
+        "examples": [
+          {
+            "id": "00000000-0000-4000-8000-000000000204",
+            "text": "예: [3, 1, 2]를 병합 정렬하면 [1, 2, 3]이 된다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000104"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "exceptions": [],
+        "misconceptions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000205",
+            "text": "오개념: O(n log n)은 정확한 실행 시간(초)을 뜻하지 않는다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000105"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "professorSignals": [],
+        "conflicts": [],
+        "citations": [
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000101",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 1,
+              "endLine": 1
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000102",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 2,
+              "endLine": 2
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000103",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 3,
+              "endLine": 3
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000104",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 4,
+              "endLine": 4
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000105",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 5,
+              "endLine": 5
+            }
+          }
+        ],
+        "sessions": [
+          {
+            "date": "2026-09-07",
+            "evidenceIds": [
+              "00000000-0000-4000-8000-000000000101",
+              "00000000-0000-4000-8000-000000000102",
+              "00000000-0000-4000-8000-000000000103",
+              "00000000-0000-4000-8000-000000000104",
+              "00000000-0000-4000-8000-000000000105"
+            ]
+          }
+        ]
+      },
+      {
+        "cluster": {
+          "id": "00000000-0000-4000-8000-000000000102",
+          "title": "안정 정렬 stable sort",
+          "action": "create",
+          "existingTopicId": null,
+          "evidenceIds": [
+            "00000000-0000-4000-8000-000000000106",
+            "00000000-0000-4000-8000-000000000107",
+            "00000000-0000-4000-8000-000000000108",
+            "00000000-0000-4000-8000-000000000109"
+          ],
+          "uncertainty": null,
+          "sessionDates": ["2026-09-07"]
+        },
+        "contentMode": "new_topic",
+        "outline": [],
+        "explanations": [
+          {
+            "id": "00000000-0000-4000-8000-000000000207",
+            "text": "병합 단계에서 키가 같으면 왼쪽 원소를 먼저 선택하므로 안정성이 유지된다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000107"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "definitions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000206",
+            "text": "안정 정렬 stable sort는 동일 키 원소의 상대 순서를 보존한다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000106"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "formulas": [],
+        "examples": [],
+        "exceptions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000208",
+            "text": "예외: 동률에서 오른쪽 원소를 먼저 선택하는 구현은 안정성을 잃을 수 있다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000108"],
+            "status": "source_supported",
+            "uncertainty": null
+          }
+        ],
+        "misconceptions": [],
+        "professorSignals": [
+          {
+            "id": "00000000-0000-4000-8000-000000000209",
+            "text": "교수는 동률 tie 처리 조건의 중요성을 명시적으로 강조했다.",
+            "evidenceIds": ["00000000-0000-4000-8000-000000000109"],
+            "status": "source_supported",
+            "uncertainty": null,
+            "observationKind": "explicit_emphasis",
+            "inference": "observable_course_evidence"
+          }
+        ],
+        "conflicts": [],
+        "citations": [
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000106",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 6,
+              "endLine": 6
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000107",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 7,
+              "endLine": 7
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000108",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 8,
+              "endLine": 8
+            }
+          },
+          {
+            "evidenceId": "00000000-0000-4000-8000-000000000109",
+            "sourceId": "00000000-0000-4000-8000-000000000001",
+            "locator": {
+              "kind": "text",
+              "startLine": 9,
+              "endLine": 9
+            }
+          }
+        ],
+        "sessions": [
+          {
+            "date": "2026-09-07",
+            "evidenceIds": [
+              "00000000-0000-4000-8000-000000000106",
+              "00000000-0000-4000-8000-000000000107",
+              "00000000-0000-4000-8000-000000000108",
+              "00000000-0000-4000-8000-000000000109"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "verificationSchemaVersion": 1,
+    "decisions": [
+      {
+        "itemId": "00000000-0000-4000-8000-000000000201",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000202",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000203",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000204",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000205",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000206",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000207",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000208",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000209",
+        "decision": "accept",
+        "reason": "지정된 원문 행이 후보 내용을 뒷받침한다.",
+        "missingEvidenceIds": []
+      },
+      {
+        "itemId": "00000000-0000-4000-8000-000000000299",
+        "decision": "reject",
+        "reason": "인용된 원문은 이 주장을 뒷받침하지 않는다.",
+        "missingEvidenceIds": []
+      }
+    ]
+  },
+  "expected": {
+    "sourceIds": ["00000000-0000-4000-8000-000000000001"],
+    "topicIds": ["00000000-0000-4000-8000-000000000101", "00000000-0000-4000-8000-000000000102"],
+    "topicTitles": ["시간복잡도와 merge sort", "안정 정렬 stable sort"],
+    "acceptedItemIds": [
+      "00000000-0000-4000-8000-000000000201",
+      "00000000-0000-4000-8000-000000000202",
+      "00000000-0000-4000-8000-000000000203",
+      "00000000-0000-4000-8000-000000000204",
+      "00000000-0000-4000-8000-000000000205",
+      "00000000-0000-4000-8000-000000000206",
+      "00000000-0000-4000-8000-000000000207",
+      "00000000-0000-4000-8000-000000000208",
+      "00000000-0000-4000-8000-000000000209"
+    ],
+    "rejected": [
+      {
+        "id": "00000000-0000-4000-8000-000000000299",
+        "text": "병합 정렬은 모든 입력에서 quicksort보다 빠르다."
+      }
+    ],
+    "terms": [
+      "시간복잡도",
+      "Time complexity",
+      "병합 정렬",
+      "merge sort",
+      "divide and conquer",
+      "O(n log n)",
+      "stable sort",
+      "동률",
+      "tie"
+    ]
+  }
+}

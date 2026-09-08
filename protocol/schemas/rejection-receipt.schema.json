@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "readOnly": true,
+  "type": "object",
+  "properties": {
+    "jobId": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+    },
+    "status": {
+      "type": "string",
+      "const": "failed"
+    },
+    "displayMessage": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "[가-힣]"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+    },
+    "errorCode": {
+      "type": "string",
+      "enum": [
+        "PROVIDER_MEDIA_UNSUPPORTED",
+        "ATTACHMENT_HASH_MISMATCH",
+        "COURSE_NOT_FOUND",
+        "DATABASE_BUSY",
+        "DATABASE_ERROR",
+        "DATABASE_MIGRATION_FAILED",
+        "DIAGNOSTICS_EXPORT_FAILED",
+        "DUPLICATE_COURSE",
+        "DUPLICATE_JOB",
+        "EXTERNAL_LINK_FAILED",
+        "INVALID_COURSE",
+        "INVALID_COURSE_PATCH",
+        "INVALID_FINGERPRINT",
+        "INVALID_INPUT",
+        "INVALID_JOB_TRANSITION",
+        "INVALID_QUEUE_ITEM",
+        "QUEUE_ITEM_NOT_STABLE",
+        "QUEUE_CONNECTION_FAILED",
+        "QUEUE_WRITE_FAILED",
+        "PROVIDER_ACCOUNT_UNSUPPORTED",
+        "PROVIDER_AUTH_REQUIRED",
+        "PROVIDER_BUSY",
+        "PROVIDER_CANCELLED",
+        "PROVIDER_CLI_CHANGED",
+        "PROVIDER_DATA_RETENTION_CONSENT_REQUIRED",
+        "PROVIDER_EXECUTABLE_NOT_FOUND",
+        "PROVIDER_EXECUTION_FAILED",
+        "PROVIDER_LOGIN_TERMINAL_UNAVAILABLE",
+        "PROVIDER_MODEL_INCOMPATIBLE",
+        "PROVIDER_NETWORK_FAILED",
+        "PROVIDER_NOT_CONFIGURED",
+        "PROVIDER_NOT_READY",
+        "PROVIDER_OUTPUT_INVALID",
+        "PROVIDER_QUOTA_OR_BILLING",
+        "PROVIDER_RATE_LIMITED",
+        "PROVIDER_REFUSED",
+        "PROVIDER_REQUEST_TOO_LARGE",
+        "PROVIDER_RESIDUAL_DATA",
+        "PROVIDER_RESPONSE_TOO_LARGE",
+        "PROVIDER_SHARED_CREDENTIAL_CONSENT_REQUIRED",
+        "PROVIDER_SHARED_CREDENTIAL_MUTATION_BLOCKED",
+        "PROVIDER_TEMPORARILY_UNAVAILABLE",
+        "PROVIDER_TIMEOUT",
+        "PROVIDER_TOOL_ACTIVITY_DETECTED",
+        "PROVIDER_UNSAFE_VERSION",
+        "SECURE_STORAGE_UNAVAILABLE",
+        "SECRET_STORAGE_FAILED",
+        "SAFE_PATH",
+        "SOURCE_COPY_FAILED",
+        "SOURCE_HASH_CANCELLED",
+        "SOURCE_HASH_FAILED",
+        "SOURCE_HASH_MISMATCH",
+        "SOURCE_TOO_LARGE",
+        "STALE_WRITE",
+        "UNEXPECTED_ERROR",
+        "UNTRUSTED_IPC_SENDER",
+        "VAULT_CONNECTION_FAILED",
+        "VAULT_WRITE_FAILED"
+      ]
+    }
+  },
+  "required": ["jobId", "status", "displayMessage", "updatedAt", "errorCode"],
+  "additionalProperties": false
+}
